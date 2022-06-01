@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: UserAccessLog
+  datasource:
+    url: jdbc:postgresql://localhost:5433/REQ_LIMIT
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password
+    hikari:
+      auto-commit: true
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
